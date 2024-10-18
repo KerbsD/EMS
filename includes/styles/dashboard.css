@@ -1,0 +1,23 @@
+.cont{
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.labels{
+   color: black;
+}
+
+.count{
+    font-size: xx-large;
+}
+
+.card{
+    background-color: rgb(209, 209, 209);
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+}

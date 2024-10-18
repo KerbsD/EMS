@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body{
+    background-color: rgb(22, 16, 15);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+    color: white;
+    font-size: xx-large;
+}
+
+h2{
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+.login-container{
+    background-color: rgb(221, 217, 217);
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-group input{
+    background-color: rgb(221, 217, 217);
+    border: none;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: large;
+    border-bottom: 2px solid rgb(84, 84, 84);
+}
+
+.form-group input:focus{
+    outline: none;
+}
+
+
+.form-group{
+    margin: 25px 0;
+}
+
+.error{
+    color: white;
+    padding: 4px;
+    background-color: rgb(245, 78, 78);
+    border: 2px solid rgb(95, 6, 6);
+    border-radius: 5px;
+}
+
+button{
+    margin-bottom: 40px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: grey;
+    border-radius: 5px;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(91, 9, 121) 35%, rgb(136, 0, 255) 100%);
+}
+
+button:hover{
+    background: linear-gradient(90deg, rgba(136, 0, 255) 0%, rgb(91, 9, 121) 35%, rgb(12,0,36,1) 100%);
+}
+
+span, a{
+    font-size: 13px;
+}
