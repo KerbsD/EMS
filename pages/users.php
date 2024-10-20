@@ -26,15 +26,12 @@ $result = mysqli_query($conn, $sql);
         <div class="container">
             <h1>Users</h1>
             <a href="user functions/add_user.php" class="table-button">Add New User</a>
-            <a href="users.php" class="table-button">Manage Users</a>
-            <!-- kung may kulang pa ilagay na lang -->
             <table>
                 <thead>
                     <tr>
                         <th>User</th>
                         <th>Registration Date</th>
                         <th>Actions</th>
-                        <!-- kung may kulang pa ilagay na lang -->
                     </tr>
                 </thead>
                 <tbody>

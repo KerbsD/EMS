@@ -1,8 +1,8 @@
-/* General Styles */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 .warning{
@@ -129,6 +129,10 @@ table th, table td {
     padding: 15px;
     text-align: left;
     color: #ffffff;
+}
+
+.actions{
+    width: 200px;
 }
 
 table th {

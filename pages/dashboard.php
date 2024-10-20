@@ -23,8 +23,8 @@ function getCount($tableName){
 </head>
 
 <body>
+<h1 class="label">DASHBOARD</h1>
     <div class="cont">
-        <h1 class="label">DASHBOARD</h1>
         <div class="card">
             <p>Total Number of Employees: </p>
             <h2 class="count"><?= getCount('employees') ?></h2>

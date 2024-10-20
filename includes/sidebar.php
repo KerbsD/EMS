@@ -3,6 +3,7 @@ session_start();
 
 if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 ?>
+
     <style>
         * {
             padding: 0;
@@ -18,6 +19,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
             height: 100vh;
             background-color: rgb(22, 16, 15);
             position: fixed;
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
         }
 
         .title {
@@ -63,9 +65,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
             text-decoration: none;
         }
 
-        .pages ul li a:hover{
+        .pages ul li a:hover {
             color: indigo;
         }
+
 
         .curUser {
             position: fixed;
@@ -84,19 +87,18 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
             padding: 10px;
         }
 
-        .active {
-            font-weight: bold;
-        }
 
-        .logout{
+        .logout {
             color: black;
             text-align: center;
             background-color: lightslategrey;
             width: 200px;
             padding: 4px 60px;
             border-radius: 4px;
+            font-weight: 400;
         }
-        .username{
+
+        .username {
             padding: 0 0 15px 10px;
         }
     </style>
@@ -104,9 +106,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
         <h2 class="title">EMS</h2>
         <div class="pages">
             <ul>
-                <li><a href="../pages/dashboard.php">Dashboard</a></li>
-                <li><a href="../pages/employees.php">Employees</a></li>
-                <li><a href="../pages/users.php">Users</a></li>
+                <li><a href="/EMS/pages/dashboard.php">Dashboard</a></li>
+                <li><a href="/EMS/pages/employees.php">Employees</a></li>
+                <li><a href="/EMS/pages/users.php">Users</a></li>
             </ul>
         </div>
 

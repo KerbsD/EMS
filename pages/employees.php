@@ -18,7 +18,7 @@ $result = mysqli_query($conn, $sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMS</title>
     <link rel="stylesheet" href="../includes/styles/sidebar.css">
-    <link rel="stylesheet" href="../includes/styles/tables.css">
+    <link rel="stylesheet" href="../includes/styles/tables.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -26,8 +26,6 @@ $result = mysqli_query($conn, $sql);
         <div class="container">
             <h1>Employees</h1>
             <a href="add_emp.php" class="table-button">Add Employee</a>
-            <a href="users.php" class="table-button">Manage Users</a>
-            <!-- kung may kulang pa ilagay na lang -->
             <table>
                 <thead>
                     <tr>
@@ -36,7 +34,6 @@ $result = mysqli_query($conn, $sql);
                         <th>Contact</th>
                         <th>Address</th>
                         <th>Actions</th>
-                        <!-- kung may kulang pa ilagay na lang -->
                     </tr>
                 </thead>
                 <tbody>
@@ -46,7 +43,7 @@ $result = mysqli_query($conn, $sql);
                             <td><?php echo $row['email'] ?></td>
                             <td><?php echo $row['contact'] ?></td>
                             <td><?php echo $row['address'] ?></td>
-                            <td>
+                            <td class="actions">
                                 <a href="edit_emp.php?id=<?php echo $row['id']; ?>" class="table-button">Edit</a>
                                 <a href="delete_emp.php?id=<?php echo $row['id']; ?>" class="table-button" onclick="return confirm('Are you sure?')">Delete</a>
                             </td>

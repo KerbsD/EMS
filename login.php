@@ -38,7 +38,7 @@ if(mysqli_num_rows($result) === 1){
     }
 
     else{
-        header("Location: index.php?error=Incorrect Username or Password");
+        header("Location: index.php?error=Incorrect Username or Password!");
         exit();
     }
 }

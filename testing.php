@@ -1,20 +1,24 @@
 <?php
-    include("config/database.php");
+class Employee{
+    private $name;
+    private $salary;
 
-    $password = "kerbs123";
-
-    $hash = password_hash($password, PASSWORD_DEFAULT);
-
-    $sql = "INSERT INTO users (user, password)
-            VALUES ('Kerbs', '$hash')";
-            
-    try{
-        mysqli_query($conn, $sql);
-        echo "User successfully created!";
-    }
-    catch(mysqli_sql_exception){
-        echo "User creation unsuccessful. :(";
+    public function __construct($name, $salary)
+    {
+        $this->name = $name;
+        $this->salary = $salary;
     }
 
-    mysqli_close($conn);
+    public function getEmp(){
+        return $this->name = $name;
+    }
+
+    public function getSal(){
+        return $this->salary = $salary;
+    }
+}
+
+$e = new Employee("Kirby", "Php100,000");
+
+echo $e->getSal();
 ?>

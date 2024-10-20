@@ -19,12 +19,14 @@ if (isset($_POST['add_user'])) {
         mysqli_query($conn, $sql);
 
         echo "<script>alert('User added successfully!')</script>";
-        header("Location: ../users.php");
+        header("Location: users.php");
         exit();
     } catch (mysqli_sql_exception) {
         echo "<p class='warning'>User creation failed.<p>";
     }
 }
+
+mysqli_close($conn);
 ?>
 <!DOCTYPE html>
 <html>

@@ -24,6 +24,8 @@ if (isset($_POST['add_employee'])) {
         echo "<p class='warning'>Employee creation failed.<p>";
     }
 }
+
+mysqli_close($conn);
 ?>
 <!DOCTYPE html>
 <html>

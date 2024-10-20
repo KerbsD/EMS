@@ -26,7 +26,6 @@
             </div>
             <button type="submit" name="submit">Log in</button>
         </form>
-        <span>Doesn't have an account? <a href="register.php">Click here!</a></span>
     </div>
 </body>
 
